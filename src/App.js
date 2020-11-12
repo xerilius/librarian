@@ -15,7 +15,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   card: {
     fontWeight:'bold', 
-    margin:'50px', 
+    margin:'50px 200px', 
     padding:'25px', 
     border:'2px solid lightgray', 
     borderRadius:'10px',
@@ -38,17 +38,19 @@ const useStyles = makeStyles((theme) => ({
   },
   searchBar: {
     outline: '0',
-    borderWidth: '0 0 2px',
+    borderWidth: '0 0 2.5px',
     borderColor: 'gray',
     margin: '0 15px',
-    width: '250px'
+    width: '250px',
+    fontSize: '1rem'
   },
   searchWrap: {
     margin: '20px 0',
     height: '25px',
   },
   page: {
-    margin: ' 50px 350px',
+    margin: ' 50px 500px',
+    fontamily: 'Roboto, sans-serif'
   },
   searchButton : {
     border: '2px solid gray',
@@ -57,7 +59,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '5px',
     padding: '3px 10px',
     textTransform: 'uppercase',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    fontFamily: 'Roboto, sans-serif'
   }
 }));
 
@@ -70,7 +73,7 @@ export default function App() {
   const [currentInput, setCurrentInput] = useState("");
   const [ID, setID] = useState("");
   const [bookData, setBookData] = useState([]);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
 
   // effect that runs when  isbnID changes and makes request to API
   useEffect(() => {
