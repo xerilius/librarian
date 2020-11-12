@@ -1,5 +1,5 @@
 <h1 align="center" ><b>Librarian</b></h1>
-<h3 align="center">Built with React.js</h3>
+<h3 align="center">Built with React.js <sub>&</sub> Material UI</h3>
 
 <br>
 
